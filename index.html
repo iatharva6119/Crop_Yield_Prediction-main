@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crop Yield Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_home.css') }}"><!-- Make sure this file exists -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Crop Yield Prediction</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="/predict" class="btn">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+       <img src="{{ url_for('static', filename='images/home_page_new.png') }}" alt="Crops" class="hero-image">
+ <!-- Correct image inclusion -->
+        <div class="hero-content">
+            <h2>Your Crop Yield Solution</h2>
+            <p>Utilize our cutting-edge technology to predict crop yields effectively.</p>
+           <a href="/predict" class="btn">Start Predicting</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-item">
+                <h3>Data-Driven Insights</h3>
+                <p>Get accurate predictions based on historical data and machine learning algorithms.</p>
+            </div>
+            <div class="feature-item">
+                <h3>User-Friendly Interface</h3>
+                <p>Our platform is designed for ease of use, making it accessible for everyone.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Real-Time Updates</h3>
+                <p>Stay informed with real-time updates on weather conditions and crop health.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to helping farmers and researchers make informed decisions. Our platform leverages the latest advancements in data science and machine learning to provide accurate crop yield predictions.</p>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-item">
+                <blockquote>
+                    <p>"This tool has changed the way I manage my farm. The predictions are spot-on!"</p>
+                    <footer>- Farmer John Doe</footer>
+                </blockquote>
+            </div>
+            <div class="testimonial-item">
+                <blockquote>
+                    <p>"I love how easy it is to use. It’s a game-changer for our research!"</p>
+                    <footer>- Researcher Jane Smith</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Crop Yield Prediction. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
